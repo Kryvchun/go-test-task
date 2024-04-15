@@ -1,9 +1,9 @@
 test: vendor
-	go test ./...
+	go test -race ./...
 .PHONY: test
 
 run: vendor
-	go run .
+	go run -race .
 .PHONY: test
 
 vendor:
